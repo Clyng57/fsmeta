@@ -1,0 +1,35 @@
+{
+  "name": "fsmeta",
+  "version": "0.0.1",
+  "description": "Search, handle, parse exif data. A tool for searching image files for data, returning a list of files matching the provided keyword and options on how to handle matched files.",
+  "main": "index.js",
+  "keywords": [
+    "exif",
+    "exif-parser",
+    "search",
+    "meta",
+    "images",
+    "image",
+    "getty",
+    "gettyimages",
+    "metadata"
+  ],
+  "author": "Cal Young",
+  "scripts": {
+    "build": "./node_modules/.bin/pkg -t node16-macos-x64 index.js -o ./build/fsmeta"
+  },
+  "bin": {
+    "fsmeta": "index.js"
+  },
+  "engines": {
+    "node": ">=14.13.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-spinner": "^0.2.10",
+    "commander": "^8.3.0",
+    "exif-parser": "^0.1.12",
+    "inquirer": "^8.2.0",
+    "pkg": "^5.5.1"
+  }
+}
